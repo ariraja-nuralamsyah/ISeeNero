@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/histori_notification"
+    tools:context=".ui.notifikasi.FragmentNotifikasi"
+    >
+
+    <TextView
+        android:id="@+id/notifikasi"
+        android:layout_width="257dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="@string/notif"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="40dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_notif"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:background="@drawable/background2" />
+</FrameLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">iSeeNero!</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">iSeeNero!</string>
+    <string name="nav_header_subtitle">Your Daily Duty</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_notifikasi">Notifikasi</string>
+    <string name="menu_search">Daftar Sungai</string>
+    <string name="empty_not_saved">Data empty!</string>
+    <string name="channel_description"> Berbahaya </string>
+    <string name="notif">Notifikasi</string>
+    <string name="_5"><![CDATA[< 5]]></string>
+    <string name="_50"><![CDATA[< 50]]></string>
+</resources>

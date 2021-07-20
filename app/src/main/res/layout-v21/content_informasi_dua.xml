@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:theme="@style/Theme.ISeeNero"
+    tools:showIn="@layout/activity_informasi_dua">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBarLayout"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.ISeeNero"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.ISeeNero.PopupOverlay" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="10pt"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewInformasi2"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-67dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/placeholderInformasi2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+            <TextView
+                android:id="@+id/tvJudulInformasi2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:fontFamily="@font/nunito"
+                android:text="Bagaimana menghadapi selama dan sesudah banjir?"
+                android:textAlignment="center"
+                android:textColor="@color/biru_tema"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/selamaTerjadiBanjir"
+                android:fontFamily="@font/nunito"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Selama Terjadi Banjir"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/tvJudulInformasi2"/>
+
+            <ImageView
+                android:id="@+id/nomor1informasi2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/nomor1"
+                app:layout_constraintStart_toStartOf="@id/placeholderInformasi2"
+                app:layout_constraintTop_toBottomOf="@id/selamaTerjadiBanjir" />
+
+            <TextView
+                android:id="@+id/tvInformasi2Nomor1"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/nunito"
+                android:text="Menjauhlah dari air banjir. Tinggi air yang mengalir 15cm saja dapat menjatuhkan orang, dan air yang setinggi 2 kali lipatnya dapat menghanyutkan mobil."
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@id/placeholderInformasi2"
+                app:layout_constraintLeft_toRightOf="@id/nomor1informasi2"
+                app:layout_constraintTop_toBottomOf="@id/selamaTerjadiBanjir" />
+
+            <ImageView
+                android:id="@+id/nomor2informasi2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/nomor2"
+                app:layout_constraintStart_toStartOf="@id/placeholderInformasi2"
+                app:layout_constraintTop_toBottomOf="@id/tvInformasi2Nomor1" />
+
+            <TextView
+                android:id="@+id/tvInformasi2Nomor2"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/nunito"
+                android:text="Terus dengarkan radio atau TV setempat untuk memperoleh informasi dan peringatan."
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@id/placeholderInformasi2"
+                app:layout_constraintLeft_toRightOf="@id/nomor2informasi2"
+                app:layout_constraintTop_toBottomOf="@id/tvInformasi2Nomor1" />
+
+            <ImageView
+                android:id="@+id/nomor3informasi2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/nomor3"
+                app:layout_constraintStart_toStartOf="@id/placeholderInformasi2"
+                app:layout_constraintTop_toBottomOf="@id/tvInformasi2Nomor2" />
+
+            <TextView
+                android:id="@+id/tvInformasi2Nomor3"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/nunito"
+                android:text="Air banjir bisa saja terkontaminasi dengan berbagai limbah. Hindari untuk kontak langsung dengan air banjir."
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@id/placeholderInformasi2"
+                app:layout_constraintLeft_toRightOf="@id/nomor3informasi2"
+                app:layout_constraintTop_toBottomOf="@id/tvInformasi2Nomor2" />
+
+            <ImageView
+                android:id="@+id/nomor4informasi2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/nomor4"
+                app:layout_constraintStart_toStartOf="@id/placeholderInformasi2"
+                app:layout_constraintTop_toBottomOf="@id/tvInformasi2Nomor3" />
+
+            <TextView
+                android:id="@+id/tvInformasi2Nomor4"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/nunito"
+                android:text="Matikan listrik dan saluran air."
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@id/placeholderInformasi2"
+                app:layout_constraintLeft_toRightOf="@id/nomor4informasi2"
+                app:layout_constraintTop_toBottomOf="@id/tvInformasi2Nomor3" />
+
+            <TextView
+                android:id="@+id/sesudahTerjadiBanjir"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/nunito"
+                android:layout_marginTop="40dp"
+                android:text="Sesudah Terjadi Banjir"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/tvInformasi2Nomor4"/>
+
+            <ImageView
+                android:id="@+id/nomor5informasi2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/nomor1"
+                app:layout_constraintStart_toStartOf="@id/placeholderInformasi2"
+                app:layout_constraintTop_toBottomOf="@id/sesudahTerjadiBanjir" />
+
+            <TextView
+                android:id="@+id/tvInformasi2Nomor5"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/nunito"
+                android:text="Pastikan pemerintah Daerah setempat telah menyatakan aman untuk kembali ke rumah."
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@id/placeholderInformasi2"
+                app:layout_constraintLeft_toRightOf="@id/nomor5informasi2"
+                app:layout_constraintTop_toBottomOf="@id/sesudahTerjadiBanjir" />
+
+            <ImageView
+                android:id="@+id/nomor6informasi2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/nomor2"
+                app:layout_constraintStart_toStartOf="@id/placeholderInformasi2"
+                app:layout_constraintTop_toBottomOf="@id/tvInformasi2Nomor5" />
+
+            <TextView
+                android:id="@+id/tvInformasi2Nomor6"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/nunito"
+                android:text="Cari tahu apakah ada fasilitas kesehatan yang tersedia dan apakah layanan darurat sudah berfungsi kembali."
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@id/placeholderInformasi2"
+                app:layout_constraintLeft_toRightOf="@id/nomor6informasi2"
+                app:layout_constraintTop_toBottomOf="@id/tvInformasi2Nomor5" />
+
+            <ImageView
+                android:id="@+id/nomor7informasi2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/nomor3"
+                app:layout_constraintStart_toStartOf="@id/placeholderInformasi2"
+                app:layout_constraintTop_toBottomOf="@id/tvInformasi2Nomor6" />
+
+            <TextView
+                android:id="@+id/tvInformasi2Nomor7"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/nunito"
+                android:text="Bawalakah uang tunai dan perlengkapan Anda seperti senter, baterai, air minum an makanan yang tahan lama jika listrik padam."
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@id/placeholderInformasi2"
+                app:layout_constraintLeft_toRightOf="@id/nomor7informasi2"
+                app:layout_constraintTop_toBottomOf="@id/tvInformasi2Nomor6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Sumber: Palang Merah Indonesia"
+                android:layout_marginTop="100dp"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/tvInformasi2Nomor7"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
